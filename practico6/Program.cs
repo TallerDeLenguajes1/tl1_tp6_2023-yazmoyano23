@@ -60,7 +60,7 @@ do
                 resultado= num1 * num2;
                 Console.WriteLine("El resultado de la multiplicación es: " + resultado);
             } else {
-                //Falta controlar que num2 sea distinto de 0
+                //Control para no dividir en cero
                 if (num2==0){
                         while (!anda) {
                             Console.WriteLine("Ingrese el segundo número");
@@ -86,7 +86,7 @@ do
     //Control para continuar operando
     while (!anda)
     {
-        Console.WriteLine("Quiere realizar otra operacion? S: SI, N: NO");
+        Console.WriteLine("¿Quiere realizar otra operacion? S: SI, N: NO");
         Aux = Console.ReadLine();
         if (Aux != "S" && Aux != "N") {
             anda = false;
